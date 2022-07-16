@@ -3,8 +3,8 @@ import { DataContext } from '../../context';
 
 export default function Header() {
   const { Query, Error } = useContext(DataContext);
-  const [query, setQuery] = Query;
-  const [error, setError] = Error;
+  const setQuery = Query[1];
+  const error = Error[0];
 
   const handleQuery = (e) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header style={{ backgroundImage: `url(/images/pattern-bg.png)` }}>
+    <header>
       {error && <div className='error'>Invalid IP or Domain!</div>}
       <h2>IP Address Tracker</h2>
       <form onSubmit={handleQuery} autoComplete='off'>
