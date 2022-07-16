@@ -1,0 +1,64 @@
+header {
+  width: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  padding: 1.8rem;
+
+  h2 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    width: 40%;
+    height: 4rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius;
+
+    @media (max-width: 991.98px) {
+      width: 70%;
+    }
+
+    @media (max-width: 575.98px) {
+      width: 90%;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 1rem 2rem;
+      padding-right: 7rem;
+      border: 1px solid transparent;
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: $very_dark_gray;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      &::placeholder {
+        color: $dark_gray;
+      }
+    }
+
+    button {
+      background-color: #000;
+      color: #fff;
+      width: 5rem;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+}
