@@ -14,7 +14,7 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header style={{ backgroundImage: 'url(./images/pattern-bg.png)' }}>
       {error && <div className='error'>Invalid IP or Domain!</div>}
       <h2>IP Address Tracker</h2>
       <form onSubmit={handleQuery} autoComplete='off'>
