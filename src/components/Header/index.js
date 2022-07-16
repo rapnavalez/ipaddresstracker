@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../../context';
+import img from '../../assets/pattern.png';
 
 export default function Header() {
   const { Query, Error } = useContext(DataContext);
@@ -14,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header style={{ backgroundImage: 'url(./images/pattern-bg.png)' }}>
+    <header style={{ backgroundImage: `url(${img})` }}>
       {error && <div className='error'>Invalid IP or Domain!</div>}
       <h2>IP Address Tracker</h2>
       <form onSubmit={handleQuery} autoComplete='off'>
