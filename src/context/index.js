@@ -23,7 +23,7 @@ export const InfoProvider = (props) => {
   //get data based on IP address
   const getdata = async (query) => {
     const response = await fetch(
-      `https://geo.ipify.org/api/v2/country,city?apiKey=at_8s1e2bfV14jshMuK5FwQl0uHadQm8&domain=${query}`
+      `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${process.env.REACT_APP_SECRET_KEY}&domain=${query}`
     );
     const data = response.json();
     return data;
