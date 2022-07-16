@@ -44,6 +44,20 @@ header {
   padding: 1.8rem;
 }
 
+header .error {
+  font-size: 1rem;
+  font-weight: 700;
+  background: pink;
+  padding: 20px;
+  color: red;
+  border-radius: 20px;
+  width: 20%;
+  position: absolute;
+  right: 20px;
+  -webkit-animation: showError 2s forwards;
+          animation: showError 2s forwards;
+}
+
 header h2 {
   color: #fff;
   font-weight: 500;
@@ -115,6 +129,50 @@ header form button {
   cursor: pointer;
 }
 
+@-webkit-keyframes showError {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  30% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  60% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  80% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showError {
+  0% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+  30% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  60% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+  80% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 main {
   width: 80%;
   min-height: 200px;
@@ -137,6 +195,7 @@ main {
   top: 20%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  z-index: 999;
 }
 
 @media (max-width: 991.98px) {
@@ -221,10 +280,25 @@ main ul li h4 {
   margin-bottom: 1.3rem;
 }
 
-section {
+#map {
   width: 100%;
-  min-height: 700px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  height: 665px;
+}
+
+.leaflet-container {
+  height: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.attribution a {
+  color: #3e52a3;
 }

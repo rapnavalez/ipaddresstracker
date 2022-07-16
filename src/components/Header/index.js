@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { DataContext } from '../../context';
 
 export default function Header() {
+  const { Query, Error } = useContext(DataContext);
+  const [query, setQuery] = Query;
+  const [error, setError] = Error;
+
+  const handleQuery = (e) => {
+    e.preventDefault();
+    const search = document.querySelector("[name='search-bar']").value;
+    if (!search) return;
+    setQuery(search);
+  };
+
   return (
     <header style={{ backgroundImage: `url(/images/pattern-bg.png)` }}>
+      {error && <div className='error'>Invalid IP or Domain!</div>}
       <h2>IP Address Tracker</h2>
-      <form>
+      <form onSubmit={handleQuery} autoComplete='off'>
         <input
           type='text'
           placeholder='Search for any IP Adress or Domain'
