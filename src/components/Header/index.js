@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../../context';
-import img from '../../assets/pattern.png';
+import img from './assets/pattern.png';
 
 export default function Header() {
   const { Query, Error } = useContext(DataContext);
