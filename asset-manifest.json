@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ipaddresstracker/static/css/main.3e046342.css",
+    "main.js": "/ipaddresstracker/static/js/main.23b1f03d.js",
+    "index.html": "/ipaddresstracker/index.html",
+    "main.3e046342.css.map": "/ipaddresstracker/static/css/main.3e046342.css.map",
+    "main.23b1f03d.js.map": "/ipaddresstracker/static/js/main.23b1f03d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e046342.css",
+    "static/js/main.23b1f03d.js"
+  ]
+}
