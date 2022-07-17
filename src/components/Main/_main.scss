@@ -10,12 +10,13 @@ main {
   justify-content: center;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 25%;
   transform: translate(-50%, 0);
   z-index: 999;
 
   @media (max-width: 991.98px) {
     width: 90%;
+    top: 30%;
   }
 
   @media (max-width: 767.98px) {
@@ -24,7 +25,7 @@ main {
 
   @media (max-width: 575.98px) {
     width: 90%;
-    top: 15%;
+    top: 25%;
   }
 
   ul {
@@ -70,7 +71,7 @@ main {
 
       h4 {
         color: #000;
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         letter-spacing: 2px;
         margin-bottom: 1.3rem;
       }

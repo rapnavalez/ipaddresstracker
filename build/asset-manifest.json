@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.3e046342.css",
-    "main.js": "/static/js/main.e40785df.js",
-    "index.html": "/index.html",
-    "main.3e046342.css.map": "/static/css/main.3e046342.css.map",
-    "main.e40785df.js.map": "/static/js/main.e40785df.js.map"
+    "main.css": "/ipaddresstracker/static/css/main.42b62012.css",
+    "main.js": "/ipaddresstracker/static/js/main.23b1f03d.js",
+    "index.html": "/ipaddresstracker/index.html",
+    "main.42b62012.css.map": "/ipaddresstracker/static/css/main.42b62012.css.map",
+    "main.23b1f03d.js.map": "/ipaddresstracker/static/js/main.23b1f03d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e046342.css",
-    "static/js/main.e40785df.js"
+    "static/css/main.42b62012.css",
+    "static/js/main.23b1f03d.js"
   ]
 }

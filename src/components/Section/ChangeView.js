@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { useMap } from 'react-leaflet';
 import { DataContext } from '../../context';
 
