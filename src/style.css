@@ -293,7 +293,7 @@ main ul li h4 {
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 10px;
   left: 0;
   right: 0;

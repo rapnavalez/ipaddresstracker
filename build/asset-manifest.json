@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ipaddresstracker/static/css/main.42b62012.css",
+    "main.css": "/ipaddresstracker/static/css/main.1ffb7689.css",
     "main.js": "/ipaddresstracker/static/js/main.23b1f03d.js",
     "index.html": "/ipaddresstracker/index.html",
-    "main.42b62012.css.map": "/ipaddresstracker/static/css/main.42b62012.css.map",
+    "main.1ffb7689.css.map": "/ipaddresstracker/static/css/main.1ffb7689.css.map",
     "main.23b1f03d.js.map": "/ipaddresstracker/static/js/main.23b1f03d.js.map"
   },
   "entrypoints": [
-    "static/css/main.42b62012.css",
+    "static/css/main.1ffb7689.css",
     "static/js/main.23b1f03d.js"
   ]
 }
